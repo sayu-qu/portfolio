@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ポートフォリオサイト</title>
+
+  <!-- Owl Carousel CSS -->
+  <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="owlcarousel/assets/owl.theme.default.min.css">
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- jQuery -->
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <!-- Owl Carousel JS -->
+  <script src="owlcarousel/owl.carousel.min.js"></script>
+  <!-- Owl Carouselを動作させるために追加 -->
+  <script src="test-carousel.js"></script>
+  <!-- parallax -->
+  <script src="parallax.min.js"></script>
+</head>
+    
+<body>
+  <header>
+    <div class="header-wrapper">
+      <div class="logo">
+        <div class="logo-aikon">
+          <img class="u-max-full-width" src="img/home-aikon.png" alt="">
+        </div>
+        <a href="./index.html" alt="Asakura">sayu.</a>
+      </div>
+      <nav class="pc_nav">
+        <ul>
+          <li><a href="./about.html">ABOUT</a></li>
+          <li><a href="./gallery.html">GALLERY</a></li>
+          <li><a href="./price.html">PRICE</a></li>
+          <li><a href="./contact.html">CONTACT</a></li>
+        </ul>
+      </nav><!-- pc_navi -->
+
+      <div class="sp_navi"><!-- sp_navi --> 
+        <div id="sp_navi_btn">
+          <div class="hambuger_menu_icon"></div>
+        </div>
+        <ul class="sp_menu_li">
+          <li><a href="./about.html">ABOUT</a></li>
+          <li><a href="./gallery.html">GALLERY</a></li>
+          <li><a href="./price.html">PRICE</a></li>
+          <li><a href="./contact.html">CONTACT</a></li>
+        </ul>
+
+        <script> 
+         $(document).ready(function(){
+          $("#sp_navi_btn").click(function(){
+          $(".sp_menu_li").slideToggle();
+          });
+        });
+        </script>
+      </div> <!-- sp_nav終わり --> 
+    </div><!-- header-wrapper終わり --> 
+  </header>
+
+<!-- ここからメイン -->
+<div id="top">
+  <div class="parallax-window" data-parallax="scroll"></div>
+    <div class="container">
+      <div class="row">
+        <div class="top-title">
+          <h1>PORT-<br>FOLIO</h1>
+        </div>
+        <p><span class="top-text1">ここはsayuのポートフォリオサイトです。</span></p>
+        <p><span class="top-text2">これまでに手がけた制作物、身につけたスキルをまとめています。</span></p>
+        <a href="./about.html"><div class="about-button">About Me  →</div></a>
+      </div><!-- row -->
+    </div><!-- container -->
+  </div>
+</div><!-- top -->
+
+<div id="skill">
+  <div class="bg-rgba">
+    <div class="fadein">
+      <h2>My Skills</h2>
+        <div class="container">
+          <div class="row">
+            <div class="skill-box">            
+              <div class="skill-item">
+                <div class="skill-aikon"><img class="u-max-full-width" src="img/window-aikon.png" alt=""></div>
+                <h3>WEB</h3>
+                <div class="skill-text">
+                <p>駆け出しのWEBデザイナーです。<br>
+                HTML/CSSの勉強をしております。</p>
+                ・WEBサイト制作<br>
+                ・UI／UXデザイン<br>
+                ・LP制作</p>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-aikon"><img class="u-max-full-width" src="img/paint-aikon.png" alt=""></div>
+                <h3>DESIGN</h3>
+                <div class="skill-text">
+                <p>ヒアリングに基づいたプランに沿ってデザインを作成いたします。</p>
+                ・商品パンフレット<br>
+                ・広告制作<br>
+                ・パッケージデザイン<br>
+                ・ロゴ制作</p>
+                </div>
+              </div>
+          </div>
+        </div><!-- row -->
+      </div><!-- container -->
+    </div><!-- fadein -->
+  </div><!-- bg-rgba -->
+</div><!-- skill -->
+
+<div class="gallery-slide">
+  <div class="fadein">
+    <div class="title">Gallery</div>
+    <div class="text">
+      <p>各種WEB・デザインなどの制作物になります。</p>
+    </div> 
+    <a href="./gallery.html" class="btn">
+      <span class="btn-inner">Learn More  →</span>
+    </a>
+  </div>
+</div>
+
+<div id="contact">
+  <div class="fadein">
+    <h2>Contact</h2>
+    <p><span style="color:#ffffff;font-size: 18px">ご相談などはこちらから</span></p>
+    <a href="./contact.html"><div class="contact-button">Learn More  →</div></a>
+  </div>
+</div>
+
+<!-- ここからfooter -->
+<footer>
+  <p class="copy">copyright (C) 2020 SAYU all rights reserved.</p>
+</footer>
+<!-- //footer -->
+
+<script> 
+$(function(){
+	$(window).scroll(function (){
+		$('.fadein').each(function(){
+			var elemPos = $(this).offset().top;
+			var scroll = $(window).scrollTop();
+			var windowHeight = $(window).height();
+			if (scroll > elemPos - windowHeight + 150){
+				$(this).addClass('scrollin');
+			}
+		});
+	});
+});
+ </script>
+
+</body>
+
+</html>
