@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ポートフォリオサイト</title>
+
+  <!-- Owl Carousel CSS -->
+  <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="owlcarousel/assets/owl.theme.default.min.css">
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- jQuery -->
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <!-- Owl Carousel JS -->
+  <script src="owlcarousel/owl.carousel.min.js"></script>  
+  <!-- Owl Carouselを動作させるために追加 -->
+  <script src="test-carousel.js"></script>
+</head>
+    
+<body>
+  <header>
+    <div class="header-wrapper">
+      <div class="logo">
+        <div class="logo-aikon">
+          <img class="u-max-full-width" src="img/home-aikon.png" alt=""></div><a href="./index.html" alt="Asakura">sayu.</a>
+        </div>
+      <nav class="pc_nav">
+        <ul>
+          <li><a href="./about.html">ABOUT</a></li>
+          <li><a href="./gallery.html">GALLERY</a></li>
+          <li><a href="./price.html">PRICE</a></li>
+          <li><a href="./contact.html">CONTACT</a></li>
+        </ul>
+      </nav><!-- pc_navi -->
+
+      <div class="sp_navi"><!-- sp_navi --> 
+        <div id="sp_navi_btn">
+          <div class="hambuger_menu_icon">
+          </div>
+        </div>
+        <ul class="sp_menu_li">
+          <li><a href="./about.html">ABOUT</a></li>
+          <li><a href="./gallery.html">GALLERY</a></li>
+          <li><a href="./price.html">PRICE</a></li>
+          <li><a href="./contact.html">CONTACT</a></li>
+        </ul>
+        <script> 
+         $(document).ready(function(){
+          $("#sp_navi_btn").click(function(){
+          $(".sp_menu_li").slideToggle();
+          });
+        });
+        </script>
+            
+        </div>
+      </div> <!-- sp_nav終わり --> 
+        
+    </div><!-- header-wrapper終わり --> 
+  </header> <!-- header終わり --> 
+
+<!-- ここからメイン -->
+
+<div id="gallery">
+  <div class="gallery-img"><img class="u-max-full-width" src="img/gallery/web-player.png" alt=""></div>
+  <div class="gallery-title"><p>音楽アプリ再生画面</p></div>
+  <div class="gallery-text">
+    <p>シンプルで使いやすくわかりやすいデザインを意識しました。また好きなカラーに変更できる音楽アプリをコンセプトとして<br>
+      複数のカラーバリエーションも制作しました。</p>
+    <p>ターゲット：20代女性<br>
+      コンセプト：使いやすく様々なカラーを楽しめる音楽アプリ<br>
+      イメージ：スタイリッシュ、POP、シンプル</p>
+    <p>2020年3月　自主制作<br>
+      Photoshop /  Adobe XD</p>
+  </div>
+  <div class="container">
+    <div class="gallery-item">
+      <img class="u-max-full-width" src="img/gallery/web-player-colors.png" alt="">
+    </div>
+  </div>
+</div>
+
+<!-- ここからfooter -->
+  <footer>
+    <p class="copy">copyright (C) 2020 SAYU all rights reserved.</p>
+  </footer>
+  <!-- //footer -->
+
+</body>
+
+</html>
