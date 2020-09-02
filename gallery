@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ポートフォリオサイト</title>
+
+  <!-- Owl Carousel CSS -->
+  <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="owlcarousel/assets/owl.theme.default.min.css">
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- jQuery -->
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <!-- Owl Carousel JS -->
+  <script src="owlcarousel/owl.carousel.min.js"></script>
+        
+  <!-- Owl Carouselを動作させるために追加 -->
+  <script src="test-carousel.js"></script>
+</head>
+    
+<body>
+  <header>
+    <div class="header-wrapper">
+      <div class="logo">
+        <div class="logo-aikon">
+          <img class="u-max-full-width" src="img/home-aikon.png" alt=""></div><a href="./index.html" alt="Asakura">sayu.</a>
+        </div>
+      <nav class="pc_nav">
+        <ul>
+          <li><a href="./about.html">ABOUT</a></li>
+          <li><a href="./gallery.html">GALLERY</a></li>
+          <li><a href="./price.html">PRICE</a></li>
+          <li><a href="./contact.html">CONTACT</a></li>
+        </ul>
+      </nav><!-- pc_navi -->
+
+      <div class="sp_navi"><!-- sp_navi --> 
+        <div id="sp_navi_btn">
+          <div class="hambuger_menu_icon">
+          </div>
+        </div>
+        <ul class="sp_menu_li">
+          <li><a href="./about.html">ABOUT</a></li>
+          <li><a href="./gallery.html">GALLERY</a></li>
+          <li><a href="./price.html">PRICE</a></li>
+          <li><a href="./contact.html">CONTACT</a></li>
+        </ul>
+        <script> 
+         $(document).ready(function(){
+          $("#sp_navi_btn").click(function(){
+          $(".sp_menu_li").slideToggle();
+          });
+        });
+        </script>
+        </div>
+      </div> <!-- sp_nav終わり --> 
+    </div><!-- header-wrapper終わり --> 
+  </header> <!-- header終わり --> 
+
+<!-- ここからメイン -->
+<div id="category-top">
+  <h1>GALLERY</h1>
+</div><!-- top -->
+
+<div id="gallery-box">
+  <div id="web">
+    <div class="container">
+		  <h3>Web Design</h3>
+      <div class="main-item">
+        <div class="item">
+        <a href="./web02.html"><img class="u-max-full-width" src="img/gallery/web-ozen.png" alt=""></a>
+        <p>架空の和食屋サイト　デザインカンプ</p><br>
+        </div>
+        <div class="item">
+      	<a href="./web01.html"><img class="u-max-full-width" src="img/gallery/web-player.png" alt=""></a>
+        <p>音楽アプリ再生画面</p><br>
+        </div>
+      </div>
+    </div>
+  </div><!-- web -->
+
+  <div id="graphic">
+  <div class="container">
+		<h3>Graphic Design</h3>
+    <div class="main-item">
+      <div class="item">
+        <a href="./gra-card.html"><img class="u-max-full-width" src="img/gallery/gra-card1.png" alt=""></a>
+        <p>名刺デザイン</p><br>
+			</div>
+			<div class="item">
+        <a href="./gra-papercraft.html"><img class="u-max-full-width" src="img/gallery/gra-paper1.jpg" alt=""></a>
+        <p>ペーパークラフト</p><br>
+			</div>
+			<div class="item">
+        <a href="./gra-flyer.html"><img class="u-max-full-width" src="img/gallery/gra-flyer2.png" alt=""></a>
+        <p>広告・フライヤー</p><br>
+			</div>
+			
+			<div class="item">
+        <a href="./gra-magazine.html"><img class="u-max-full-width" src="img/gallery/gra-magazine.png" alt=""></a>
+        <p>アニマルマガジン</p><br>
+			</div>
+			<div class="item">
+        <a href="./gra-design.html"><img class="u-max-full-width" src="img/gallery/gra-fasshon1.png" alt=""></a>
+        <p>Fasshon season</p><br>
+			</div>
+			<div class="item">
+        <a href="./gra-chara.html"><img class="u-max-full-width" src="img/gallery/gra-yuruchara.png" alt=""></a>
+        <p>キャラクター制作 </p><br>
+			</div>
+		</div>
+	</div>
+  </div><!-- graphic -->
+</div>
+
+<!-- ここからfooter -->
+  <footer>
+    <p class="copy">copyright (C) 2020 SAYU all rights reserved.</p>
+  </footer>
+  <!-- //footer -->
+
+  <script> 
+    $(function(){
+      $(window).scroll(function (){
+        $('.fadein').each(function(){
+          var elemPos = $(this).offset().top;
+          var scroll = $(window).scrollTop();
+          var windowHeight = $(window).height();
+          if (scroll > elemPos - windowHeight + 150){
+            $(this).addClass('scrollin');
+          }
+        });
+      });
+    });
+  </script>
+</body>
+
+</html>
