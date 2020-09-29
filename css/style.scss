@@ -450,16 +450,12 @@ header {
 
 // skill
 #skill {
-  background-color: #bb9d9f;
+  background-color: #e2d6d1;
   background-image: url("../img/skill_bg.jpg");
   background-size: cover;
 
-  .bg-rgba {
-    background-color:rgba(255,255,255,0.3);/* ←薄くする */
-  }
-
   h2 {
-    padding: 100px 0px 35px;
+    padding: 120px 0px 40px;
     font-family: 'Josefin Sans', sans-serif;
     font-size: 50px;
     letter-spacing: 0.07em;
@@ -468,28 +464,33 @@ header {
     margin-bottom: 0rem;
   }
 
+  h3 {
+    margin-bottom: 3rem;
+  }
+  
   @media (min-width: 550px) {
 
     .skill-box {
       display: flex;
       flex-wrap:wrap;
       justify-content: space-between;
-      padding-bottom: 100px;
+      padding-bottom: 120px;
   
       .skill-item {
         background-color: #ffffff;
         align-items:center;
         text-align: center;
-        padding: 30px 40px;
+        font-size: 16px;
+        padding: 30px 35px;
         margin: 10px 0px;
         width: 30%;
-        box-shadow:2px 2px 8px 2px #cca4a4;
+        box-shadow:2px 2px 8px 2px #aca5a5;
   
         .skill-aikon {
-          padding: 25px 0px;
+          padding: 25px 0px 40px;
   
           img {
-            width: 30%;
+            width: 26%;
             height: auto;
           }
         }
@@ -560,7 +561,7 @@ header {
   text-align: center;
 
   h2 {
-    padding: 100px 0px 35px;
+    padding: 120px 0px 40px;
     font-family: 'Josefin Sans', sans-serif;
     color: #ffffff;
     font-size: 50px;
@@ -586,7 +587,7 @@ header {
     width: 280px;
     padding: 15px 0px;
     font-size: 18px;
-    margin: 35px 0px 100px;
+    margin: 40px 0px 120px;
     display: flex;
     justify-content:center;
     list-style: none;
@@ -617,10 +618,19 @@ header {
 
   @media (min-width: 550px) {
     background-image: url("../img/slide-img.png");
+
+    .text {
+      max-width: 1000px;
+    }
+    
   }
   
   @media (max-width: 549px) {
     background-image: url("../img/slide-img-sp.png");
+
+    .text {
+      max-width: 90%;
+    }
   }
 
   .caption { 
@@ -628,7 +638,7 @@ header {
   }
 
   .title { 
-    margin: 0 auto 35px;
+    margin: 0 auto 40px;
     max-width: 1000px;
     font: 600 50px "Josefin Sans", sans-serif;
     letter-spacing:  0.07em;
@@ -637,7 +647,6 @@ header {
 
   .text {
     margin: 0 auto;
-    max-width: 1000px;
     font-size: 18px;
     color: #ffffff;
     margin-bottom: 40px;
@@ -1688,12 +1697,4 @@ textarea, select {
       }
     }
   }
-}
- 
-@media (min-width: 550px) {
-
-}
-
-@media (max-width: 549px) {
-
 }
